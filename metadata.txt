@@ -1,0 +1,43 @@
+[general]
+name=Layer Health Checker
+about=Tool to validate and repair the health of vector and raster layers: geometry, CRS, attributes, metadata.
+category=Plugins
+hasProcessingProvider=False
+hasTranslations=True
+description=Checks the integrity of both vector and raster layers, detects invalid geometries, CRS issues, attribute inconsistencies, and raster metadata anomalies. Provides tools for repairing geometries, zooming to invalid features, exporting results, and creating clean copies of layers. Fully compatible with QGIS 4 and Qt6.
+icon=icon.png
+tags=layer,geometry,raster,validation,repair,checker,quality,crs
+
+# credits and contact
+author=Dr. Geol. Faustino Cetraro
+email=geol-faustino@libero.it
+homepage=https://github.com/drFaustino/layer_health_checker
+repository=https://github.com/drFaustino/layer_health_checker
+tracker=https://github.com/drFaustino/layer_health_checker
+
+# QGIS context
+deprecated=False
+experimental=False
+qgisMinimumVersion=4.00
+qgisMaximumVersion=4.99
+supportsQt6=True
+
+# versioning
+version=1.0.0
+changelog=
+  Version 1.0.0:
+    - Added raster layer checks (metadata, CRS, resolution, nodata).
+    - Added dual repair mode for vector layers (invalid-only / full layer).
+    - Added attribute table opener.
+    - Added translation support and metadata flag.
+    - Improved UI layout and button grouping.
+    - Added combo box for repair mode selection.
+    - Updated icons and plugin structure.
+
+  Version 1.0.0:
+    - Initial release.
+    - Geometry validation and invalid geometry detection.
+    - Zoom to invalid features.
+    - Export results to CSV.
+    - Copy clean layer.
+    - Logging panel and progress bar.
